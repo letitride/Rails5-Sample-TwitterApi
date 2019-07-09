@@ -1,0 +1,7 @@
+<div class="outer">
+<h2>タイムラインの表示</h2>
+<% @tweets.each do |tweet| %>
+  <%= "#{tweet.attrs[:user][:name]} @#{tweet.attrs[:user][:screen_name]}" %>
+  <p><%= tweet.attrs[:text] %></p>
+<% end %>
+</div>
