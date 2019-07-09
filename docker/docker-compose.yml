@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  ishikitakaidb:
+    container_name: "ishiki-tweet-postgres"
+    build: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: "ishikitweet"
+      POSTGRES_USER: "ishikitweet"
+      POSTGRES_PASSWORD:
